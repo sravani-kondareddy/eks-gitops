@@ -6,7 +6,7 @@ spec:
   forProvider:
     region: us-east-1
     version: "1.27"
-    roleArn: arn:aws:iam::361769593753:role/aws-service-role/eks.amazonaws.com/AWSServiceRoleForAmazonEKS
+    roleArn: arn:aws:iam::361769593753:role/aws-service-role/eks.amazonaws.com/eks-cmp
     resourcesVpcConfig:
       subnetIds:
         - subnet-0804ad701e79cdec1
