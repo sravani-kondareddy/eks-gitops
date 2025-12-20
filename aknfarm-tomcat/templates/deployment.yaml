@@ -4,6 +4,7 @@ metadata:
   name: {{ include "aknfarm-tomcat.fullname" . }}
   labels:
     {{- include "aknfarm-tomcat.labels" . | nindent 4 }}
+  namespace: default
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
